@@ -10,7 +10,7 @@ import { RatingComponent } from './components/rating/rating.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, //default route
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
   { path: 'home', component: HomeComponent },
   {
     path: 'product/:id', component: ProductComponent,
